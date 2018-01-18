@@ -198,7 +198,7 @@
 			</a>
 			<ul class="site-menu">
 				<li><a href="/#/">דף הבית</a></li>
-				<li><a href="/#/terms/">תקנון  </a></li>
+				<li><a href="/#/terms/">תקנון</a></li>
 				<!--<li><a href="/#/newproduct/">נסו עכשיו בחינם!</a></li>
 				<li><a href="/#/contact/">צור קשר</a></li>-->
 			</ul>
