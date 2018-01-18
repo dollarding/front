@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="salesa/style.css">
+
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+<!-- aquieeeeee -->
+
+		<div class="top" style="padding: 7em 0 7em 0;" >
+			<h1 dir="rtl" style=" margin-top:0px;">בעל עסק<br>מצטרפים עכשיו בחינם!</h1>
+			<p dir="rtl" style="width: 100%; font-size: 20px; height: 100px;">קופיט מברכת לקוחות חדשים ומאפשרת לכם להעלות הטבה בחינם עכשיו!<br/> עם ההטבות של קופיט תוכלו להגדיל את קהל הלקוחות שלכם וליצור הכנסות חדשות. נסו עכשיו!</p>
+		</div>
+		<div class="bottom" >
+			<div class="buttons" >
+				<figure ng-controller="CollapseDemoCtrl" ng-click="showModalContacto4();">
+					<a>
+						<h2 dir="rtl" style="font-size: 24px; margin-top: -10px;">
+							<img alt="פרסם הטבה" src="salesa/img/i1.png" >
+							<b dir="rtl">פרסם הטבה</b>
+							<span dir="rtl">בחינם עכשיו!</span>
+						</h2>
+					</a>
+				</figure>
+				<figure ng-controller="CollapseDemoCtrl" ng-click="showModalContacto3();">
+					<a>
+						<h2 style="font-size: 24px; margin-top: -10px;">
+							<img alt="פרסם מוצר" src="salesa/img/i2.png">
+							<b dir="rtl">פרסם מוצר</b>
+							<span dir="rtl">בחינם עכשיו!</span>
+						</h2>
+					</a>
+				</figure>
+			</div>
+			<a style="margin-top: -70px;" href="http://coupit.co.il/#/sales/" class="more" dir="rtl">למד עוד</a>
+			<br/>
+			<br/>
+
+			<a style="margin-top: -55px;" ng-controller="CollapseDemoCtrl" ng-click="showModalContacto();" class="more" dir="rtl">צור קשר</a>
+		</div>
+
+
+<div ng-controller="HomeCtrl" >
+
+<div id="newslater" ng-show="sacos" >
+ <a class="fa fa-close" style="float:left;font-size:20px;margin:2px;;text-decoration:none;color: white;" ng-click="saco();"></a>
+  <h3 dir="rtl" class="textNew">לקבלת הודעות אי-מייל עם כל ההטבות</h3>
+   <form name="form.userForm" class="form-horizontal newslater" ng-submit="sendNewslater(emails)" style="padding: 5px;margin-top: -10px;">
+
+          <div class="form-group has-feedback no-margin">
+          <input dir="rtl" type="email"  name="email" ng-model="emails" class="form-control" placeholder="דואר אלקטרוני" required style="width: 65%;float: right;margin-right: 10px;font-size: 12px !important;color: black !important;">
+
+
+          <button type="submit" class="btn btn-success gf sombra pedo form-control-feedback rounded mamita" ng-disabled="form.userForm.email.$invalid && !form.userForm.email.$pristine" >הרשמה</button>
+          
+            </div>
+
+      </form>
+</div>
+
+<div ng-click="saco();" id="iconNew" class="circle show animated pulse" style="display:none;" >
+     <i class="glyphicon glyphicon-send" style="font: 50px"></i>
+
+  </div>
+
+
+
+</body>
+
+

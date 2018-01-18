@@ -1,0 +1,80 @@
+<div class="modal-header modal-headerTree">
+    <a class="fa fa-close" ng-click="cancel()"></a>
+    <h3 dir="rtl">צור הטבה חדשה</h3>
+</div>
+     <div class="modal-body5" data-ng-controller="HomeCtrl">
+                <img style="float: right;margin-top: 15px;margin-right: 15%;
+" src="img2/foto.jpg"/>
+            <h3 style="float: right;color: gray;font-size: 20px;margin-top: 20px;margin-right: 10px;" dir="rtl">תמונה של הטבה</h3>
+                <form class="form-group3" name="upload" ng-submit="uploadFile(1)">
+
+                <center>
+                <input type="file"  name="file" uploader-model="file" onchange="angular.element(this).scope().fileNameChanged()">
+                <img class="fileUp" height="100px" src="{{datof}}" ng-show="datof"/>
+                <i class="fa fa-camera" class="fileUp" style="margin-top: 30px;font-size: 50px;" ng-show="!datof"></i>
+                <br/>
+
+                </center>
+                </form>
+                  <img style="float: right;margin-top: 15px;margin-right: 15%;" src="img2/foto.jpg"/>
+               <h3 style="float: right;color: gray;font-size: 20px;margin-right: 10px;" dir="rtl">לוגו בית העסק</h3>
+                <form class="form-group3" name="upload" ng-submit="uploadFile(2)">
+
+                <center>
+                <input type="file" name="file" uploader-model="file" onchange="angular.element(this).scope().fileNameChanged2()"/>
+                <img  class="fileUp" height="100px" src="{{datof2}}" ng-show="datof2"/>
+                 <i class="fa fa-camera" class="fileUp" style="margin-top: 30px;font-size: 50px;" ng-show="!datof2"></i>
+                 <br/>
+
+                </center>
+                </form>
+                <br/>
+                <br/>
+                <br/>
+
+
+
+
+                <form class='form-group2' name="form.userForm" ng-submit="sendMailCoupon(datof,datof2,nameBenefit,prise,prise2,nameBisness,loc,tel);cancel();">
+
+                <input type="name" name="name" class="form-control andromeda" ng-model="nameBenefit" placeholder="שם של הטבה" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float: left;border-bottom: 1px solid #9A9A9A !important;">
+                <img style="float: left;margin-top: 15px;" src="img2/coupon.jpg"/>
+
+
+                 <input type="name" name="precio" class="form-control andromeda pedro nani" ng-model="prise" placeholder="מחירון ההטבה" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float: left;border-bottom: 1px solid #9A9A9A !important;">
+                 <img style="float: left;margin-top: 15px;" src="img2/peso.jpg"/>
+
+
+                 <input type="name" name="precio2" class="form-control andromeda pedro nani" ng-model="prise2" placeholder="מחיר ההטבה" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float:left;border-bottom: 1px solid #9A9A9A !important;">
+                 <img style="float: left;margin-top: 15px;" src="img2/peso.jpg"/>
+
+
+                 <input type="name" name="nameBisness" class="form-control andromeda" ng-model="nameBisness" placeholder="שם העסק" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float: left;border-bottom: 1px solid #9A9A9A !important;">
+                <img style="float: left;margin-top: 15px;" src="img2/negocio.jpg"/>
+
+
+                <input type="name" name="loc" class="form-control andromeda" ng-model="loc" placeholder="עיר" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float: left;border-bottom: 1px solid #9A9A9A !important;">
+                <img style="float:left;margin-top: 15px;" src="img2/loc.jpg"/>
+
+                <input type="name" name="tel" class="form-control andromeda" ng-model="tel" placeholder="טלפון" dir="rtl" required style="border-bottom: 1px solid #9A9A9A; float:left;border-bottom: 1px solid #9A9A9A !important;">
+                <img style="float: left;margin-top: 15px;" src="img2/tel.jpg"/>
+
+
+                <button type="submit" class="btn btn-success" dir="rtl" style="margin-top:40px; float: left;">שמור</button>
+
+                <div style="width: 40%;float:right;margin: 20px;">
+
+                <h4 dir="rtl" style="width: 90%;float:left;">אני מאשר את תקנון השימוש <a href="/#/terms/" target="_blank">המופיע באתר</a></h4>
+                <input style="float:left;margin-left: 5px;" dir="rtl" id="checkbox-success2" checked="checked" type="checkbox" required>
+                </div>
+
+
+                </form>
+
+        </div>
+
+    <div class="modal-footer">
+
+
+
+    </div>

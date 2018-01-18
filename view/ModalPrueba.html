@@ -1,0 +1,38 @@
+<div class="modal-header">
+    <h3>Enviar SMS o Mail!</h3>
+</div>
+<form name="form.userForm" ng-submit="submitForm()" novalidate>
+    <div class="modal-body">
+
+        <!-- SMS
+        <div class="form-group">
+            <label>SMS</label>
+            <input type="number" name="SMS" class="form-control" ng-model="SMS" ng-minlength="3" ng-maxlength="30" required>
+            <p ng-show="form.userForm.SMS.$error.minlength" class="help-block">sms is too short.</p>
+
+        </div>
+
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid" ng-click="sendSMS(items,SMS)">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+
+
+        -->
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="email" required>
+            <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+    </div>
+
+
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid" ng-click="sendMail(items,email,nombre)">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</form>

@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <a class="fa fa-close" ng-click="cancel()"></a>
+    <h3 dir="rtl"><b>מכירות ישירות מהפייסבוק</b></h3>
+</div>
+<div style="background-color: gainsboro;">
+<p dir="rtl" style="width: 100%;font-size: 18px; padding: 40px;background-color: #FFF;color: #565656;">בואו להפוך את עמוד הפייסבוק השקט שלכם למכונת מלחמה אמיתית. “הפייסקופ” של קופיט יהפוך את דף הפיסבוק שלכם לזירת מכירות ויניע קונים לבית העסק בקצב חדש. לפרטים נוספים תנו מבט במגוון החבילות המוצעות מטה ותנו קצת קופיט לעסק שלכם.</p>
+<div class="flecha-down" style="border-top: 25px solid #FFF;margin-left: 45%;margin-top: -6px;"></div>
+<br/>
+
+<b style="font-size:16px;">לפרטים והזמנת החבילה, אנא מלאו את הפרטים מטה ואנו נעמוד איתכם בקשר בהקדם</b>
+
+<form name="form.userForm" ng-submit="submitForm()" novalidate>
+    <div class="modal-body2">
+
+
+
+        <!-- EMAIL -->
+        <div class="form-group2">
+            <center>
+
+            <input type="name" name="name" class="form-control andromeda" ng-model="name" placeholder="שם" dir="rtl" required style="border-bottom: 1px solid #9A9A9A;">
+            <input type="name" name="tel" class="form-control andromeda" ng-model="tel" placeholder="טלפון" dir="rtl" required style="border-bottom: 1px solid #9A9A9A;">
+            <input type="email" name="email" class="form-control andromeda muchos" ng-model="email" placeholder="דוא''ל" dir="rtl" required>
+            </center>
+            <center>
+            <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block" dir="rtl">הזן כתובת דוא"ל חוקית.</p>
+            <textarea name="mensaje" class="form-control andromeda" ng-model="mensaje" placeholder="הערות" dir="rtl" style="border-bottom: 1px solid #9A9A9A;"></textarea>
+            </center>
+
+
+        </div>
+    </div>
+
+    <div class="modal-footer" style="background-color: gainsboro;">
+        <button type="submit" class="btn btn-success" dir="rtl" ng-disabled="form.userForm.$invalid" ng-click="sendMailContacto(name,tel,email,mensaje)">שלח</button>
+
+    </div>
+</form>
+</div>

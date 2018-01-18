@@ -1,0 +1,273 @@
+* {margin:0;padding:0;list-style:none;outline:none;border:none;font-family:'Open Sans Hebrew',arial;vertical-align:top;text-decoration:none;font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-appearance: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+.c:before, .c:after{ content :"" ; display: table} .c:after{ clear: both} .c{ *zoom : 1}
+a,input {transition: all .2s linear;-o-transition: all .2s linear;-moz-transition: all .2s linear;-webkit-transition: all .2s linear}
+img {width:auto;max-width:100%;height:auto}
+body {text-align:center;cursor:default;direction:rtl}
+.adNetwork {position:relative;background:#fff;height:100%}
+.adNetwork:before {content:'';background:url('img/top.jpg') top center;background-size:cover;position:absolute;top:0;right:0;width:100%;height:50%}
+.top {padding:160px 0 0 0;max-width:850px;position:relative;text-align:center;margin:0 auto}
+.top h1 {font-weight:100;line-height:1;font-size:3.5em}
+.top h1:after {content:'';display:block;margin:1em auto;width:70px;height:4px;background:#1a9247}
+.top p {margin:1em auto;max-width:660px;font-size:1.4em}
+.one {position:relative;padding:10px 0}
+
+
+.one input {
+    height: 50px;
+    font-family: 'Open Sans Hebrew',arial !important;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    width: 53%;
+    padding: 15px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.num {display:inline-block;width:2.5em;line-height:2.5em;background:#1a9247;color:#fff;font-weight:800;border-radius:50%;position:absolute;left:100%;font-size:1.4em;top:0}
+.two {position:relative;padding:10px 0}
+.two b {display:block;font-weight:normal;color:#fff;padding:10px 0;font-size:1.2em;position:relative}
+.two b:before {content:'';position:absolute;top:100%;right:50%;width:10px;height:10px;border-bottom:1px #fff solid;border-right:1px #fff solid;transform:rotate(45deg);margin:0 -5px 0 0}
+.screens {position:relative;text-align:center;margin:0 auto;max-width:920px;padding:3em 0;}
+.botonEnter{
+
+    width: 20%;
+    float: left;
+    height: 40px;
+    font-size: 1.5em;
+    background-color: #1a9247;
+    color: white;
+    border-radius: 8px;
+    margin-right: 11px;
+    margin-top: -36px;
+
+}
+.contenedor{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    width: 71px;
+}
+.contenedor2{
+
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 41px;
+
+    
+}
+
+
+
+.pc {
+    width: 643px;
+    height: 618px;
+    background: url('img/pc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.pc2 {
+    width: 643px;
+    height: 618px;
+    background: url('img/pc2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.pc span {
+    display: block;
+    position: absolute;
+    top: 32%;
+    right: 35%;
+    width: 30%;
+    font-size: .8em;}
+
+.tablet{
+    display: none;
+    width: 513px;
+    height: 630px;
+    background: url('img/tablet.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+.tablet2{
+    display: none;
+    width: 513px;
+    height: 630px;
+    background: url('img/tablet2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tablet span {    
+    display: block;
+    position: absolute;
+    top: 68%;
+    right: 31%;
+    width: 42%;
+    font-size: .9em;}
+
+.mobile{
+
+    width: 327px;
+    height: 630px;
+    background: url('img/mobile.png');
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.mobile2{
+
+    width: 327px;
+    height: 630px;
+    background: url('img/mobile2.png');
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.mobile span {    
+   display: block;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    width: 70%;
+    font-size: .9em;
+}
+
+.three {max-width:450px;margin:-50px auto 50px auto;position:relative}
+.three button {display:block;background:#1a9247;color:#fff;padding:20px;font-size:1.6em;margin:20px;border-radius:10px;font-weight:900}
+
+*:focus {
+    outline: none;
+}
+
+
+@media (max-width:800px) {
+	
+}
+@media (max-width:650px) {
+     .contenedor{
+display: none;}
+	.pc {display:none}
+	.num {left:auto;right:0}
+}
+@media (max-width:500px) {
+    .contenedor{
+display: none;}
+	.buttons {width:100%}
+	.buttons b {font-size:1em}
+	.buttons span {font-size:.6em}
+
+
+	.one {position:relative;padding:5px 0}
+.one input {    width: 80%;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    width: 70%;
+    margin-right: 27px;
+    padding: 15px 0;
+    box-sizing: border-box;}
+
+
+.num {
+    display: inline-block;
+    width: 2em;
+    line-height: 2em;
+    background: #1a9247;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    font-size: 1em;
+    top: 0;
+}
+
+
+.three {max-width: 262px;margin:-30px auto 30px auto;position:relative}
+.three button {
+    width: 197px!important;
+    display: block;
+    background: #1a9247;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.5em;
+    margin: 33px;
+    border-radius: 10p;
+    font-weight: 900;
+}
+
+
+
+
+
+
+}
+
+
+.form-control2{
+	margin-top: 15px;
+	width: 80%;
+	font-size: 18pt;
+
+}
+
+.inpito{
+	width: 85%;
+    /* float: left; */
+    height: 40px;
+    border-radius: 7px;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+
+
+.campoTexto{
+float: left;
+width:80%;
+background-color:#206b3d;
+height:100px;
+}
+
+.modal-header{
+background-color:#464646;
+color: white;
+}
+.close{
+	margin-top: 0px;
+	float: left;
+}
+
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:300;src:url(fonts/opensanshebrew-light-webfont.eot);src:url(fonts/opensanshebrew-light-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-light-webfont.woff) format("woff"),url(fonts/opensanshebrew-light-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:400;src:url(fonts/opensanshebrew-italic-webfont.eot);src:url(fonts/opensanshebrew-italic-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-italic-webfont.woff) format("woff"),url(fonts/opensanshebrew-italic-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:400;src:url(fonts/opensanshebrew-regular-webfont.eot);src:url(fonts/opensanshebrew-regular-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-regular-webfont.woff) format("woff"),url(fonts/opensanshebrew-regular-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:700;src:url(fonts/opensanshebrew-bolditalic-webfont.eot);src:url(fonts/opensanshebrew-bolditalic-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-bolditalic-webfont.woff) format("woff"),url(fonts/opensanshebrew-bolditalic-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:700;src:url(fonts/opensanshebrew-bold-webfont.eot);src:url(fonts/opensanshebrew-bold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-bold-webfont.woff) format("woff"),url(fonts/opensanshebrew-bold-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:800;src:url(fonts/opensanshebrew-extrabold-webfont.eot);src:url(fonts/opensanshebrew-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-extrabold-webfont.woff) format("woff"),url(fonts/opensanshebrew-extrabold-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:800;src:url(fonts/opensanshebrew-extrabold-webfont.eot);src:url(fonts/opensanshebrew-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-extrabold-webfont.woff) format("woff"),url(fonts/opensanshebrew-extrabold-webfont.ttf) format("truetype")}

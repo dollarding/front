@@ -1,0 +1,69 @@
+* {margin:0;padding:0;list-style:none;outline:none;border:none;font-family:'Open Sans Hebrew',arial;vertical-align:top;text-decoration:none;font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-appearance: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+.c:before, .c:after{ content :"" ; display: table} .c:after{ clear: both} .c{ *zoom : 1}
+a,input {transition: all .2s linear;-o-transition: all .2s linear;-moz-transition: all .2s linear;-webkit-transition: all .2s linear}
+img {width:auto;max-width:100%;height:auto}
+body {text-align:center;cursor:default;}
+.h {margin: 0 auto;position: relative;max-width: 1020px;}
+.c:before, .c:after {content: "";display: table;}
+.top {background:url('img/top.jpg') center center;background-size:cover;padding:15em 0 10em 0;color:#fff}
+
+.bottom {background:#fff;margin: -2% 0 0 0;}
+.buttons {display:table;table-layout:fixed;width:240px;}
+.buttons figure {display:table-cell;box-sizing:border-box;padding:10px;position:relative}
+.buttons figure:before {content:'';position:absolute;bottom:0;right:0;width:100%;height:30px;background: rgba(0,0,0,1);background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%);background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,0,1)), color-stop(55%, rgba(0,0,0,0)));background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%);background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%);background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%);background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );transition:all .2s linear}
+.buttons a {display:block;height:0;padding:100% 0 0 0;background:#1a9247;border-radius:50%;position:relative;color:#fff;top:0}
+.buttons h2 {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+}
+.buttons img {width:70px;margin:0 auto .5em auto}
+.buttons b {display:block;font-weight:900;font-size:1.2em;white-space:nowrap;line-height:1}
+.buttons span {display:block;font-weight:normal;line-height:1}
+.buttons a:hover {top:-5px}
+.buttons figure:hover:before {opacity:.5;transform:scale(.7,1)}
+.more {display:inline-block;padding:10px 20px;border:1px #035d36 solid;margin:0 auto 5em auto;color:#035d36;border-radius:5px;font-size:1.3em}
+.more:hover {box-shadow:inset 0 -80px 0 #1a9247;color:#fff}
+
+.muchos{
+border-bottom: 1px solid #9A9A9A !important;
+}
+
+
+@media (max-width:500px) {
+	.buttons b {font-size:1em}
+	.buttons span {font-size:.6em}
+	.muchos{border-bottom: 1px solid #9A9A9A !important;border: none;border-bottom: 1px solid #9A9A9A;width: 80% !important;font-size: 18px !important;background-color: rgba(0, 255, 255, 0);
+}
+
+
+
+
+}
+
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:300;src:url(fonts/opensanshebrew-light-webfont.eot);src:url(fonts/opensanshebrew-light-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-light-webfont.woff) format("woff"),url(fonts/opensanshebrew-light-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:400;src:url(fonts/opensanshebrew-italic-webfont.eot);src:url(fonts/opensanshebrew-italic-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-italic-webfont.woff) format("woff"),url(fonts/opensanshebrew-italic-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:400;src:url(fonts/opensanshebrew-regular-webfont.eot);src:url(fonts/opensanshebrew-regular-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-regular-webfont.woff) format("woff"),url(fonts/opensanshebrew-regular-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:700;src:url(fonts/opensanshebrew-bolditalic-webfont.eot);src:url(fonts/opensanshebrew-bolditalic-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-bolditalic-webfont.woff) format("woff"),url(fonts/opensanshebrew-bolditalic-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:700;src:url(fonts/opensanshebrew-bold-webfont.eot);src:url(fonts/opensanshebrew-bold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-bold-webfont.woff) format("woff"),url(fonts/opensanshebrew-bold-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:italic;font-weight:800;src:url(fonts/opensanshebrew-extrabold-webfont.eot);src:url(fonts/opensanshebrew-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-extrabold-webfont.woff) format("woff"),url(fonts/opensanshebrew-extrabold-webfont.ttf) format("truetype")}
+@font-face{font-family:'Open Sans Hebrew';font-style:normal;font-weight:800;src:url(fonts/opensanshebrew-extrabold-webfont.eot);src:url(fonts/opensanshebrew-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(fonts/opensanshebrew-extrabold-webfont.woff) format("woff"),url(fonts/opensanshebrew-extrabold-webfont.ttf) format("truetype")}
+
+
+.lp-popups a, .lp-popupshalf a {display: block;margin: 20px;background: #fff;box-shadow: 0 3px 3px rgba(0,0,0,.2);position: relative;top: 0;text-align: center;color: #666;min-height: 100%;}
+img {vertical-align: middle;}
+.lp-popups p, .lp-popupshalf p {margin: 20px;}
+.lp-popups span, .lp-popupshalf span {display: inline-block;background: #1a9247;color: #fff;padding: 7px 12px;border-radius: 3px;margin: 20px auto;box-shadow: 0 2px 2px rgba(0,0,0,.4);font-weight: bold;font-size: .9em;}
+.lp-popups figure {float: right;width: 33.33%;}
+.packageform {background: #d7d7d7;position: relative;}
+.main h2 {color: #444;border-bottom: 1px #ccc solid;margin: 20px 10px;font-weight: normal;padding: 0 0 5px 0;position: relative;}
+.lp-popups h2, .lp-popupshalf h2 {border-bottom: 0;}
+.lp-popups span svg {fill: #fff;height: .8em;width: .8em;margin: 0 10px 0 0;position: relative;top: 5px;}
+.lp-popups a:hover {box-shadow: 0 10px 10px rgba(0,0,0,.5);top: -3px;}
+
+.lp-popupshalf figure {float: right;width: 50%;}
+.lp-popupshalf {margin: 3% 0 0 0;}
+.lp-popupshalf a:hover {box-shadow: 0 10px 10px rgba(0,0,0,.5);top: -3px;}

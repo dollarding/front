@@ -1,0 +1,277 @@
+<script src="js/angular-route.js"></script>
+
+<div id="preloader" style="display:none;">
+  <div id="status">
+		<img src="img/logo.png" alt="NewDeals">
+  </div>
+  <div id="status2" dir="rtl" style="display:none;" ><b>נא להמתין</b></div>
+  <div id="status3" dir="rtl" style="display:none;">נא להמתין</div>
+</div>
+<div id="wideUse" class="wide animated" ng-show="coupons.length>0">
+   <div class="textoMidle">
+        <form action="#">
+        	<div>
+        		<img src="img/btnlo.png" id="matrix" onclick="change2()">
+        	</div>
+            <div>
+				<input type="text" placeholder="מה תרצו?" ng-model="search">
+			</div>
+			<div>
+               <select name="categories" ng-model="filtro">
+                    <option value="" disabled selected> לפי קטגוריה</option>
+                    <option value=""> כל ההטבות</option>
+                    <option value="55b65840b7b7579d4227b764" >אוכל</option>
+                    <option value="55b65840b7b7579d4227b76e">אופטיקה</option>
+                    <option value="55b65840b7b7579d4227b76a">בעלי מקצוע</option>
+                    <option value="55b65840b7b7579d4227b767">חשמל ומחשבים</option>
+                    <option value="55b65840b7b7579d4227b76f">כללי</option>
+                    <option value="55b65840b7b7579d4227b76b">לאישה</option>
+                    <option value="55b65840b7b7579d4227b766">לבית</option>
+                    <option value="55b65840b7b7579d4227b76c">משרדי</option>
+                    <option value="55b65840b7b7579d4227b76d">מתנות</option>
+                    <option value="55b65840b7b7579d4227b768">ספורט</option>
+                    <option value="55b65840b7b7579d4227b769">תיירות</option>
+                    <option value="55b65840b7b7579d4227b765">תרבות</option>
+                </select>
+            </div>
+		</form>
+    </div>
+</div>
+
+ <div style="width:100%;height: 0px; visibility:hidden;display:none" >​
+  <b id="sliderAmount">50km</b>
+  <input style="width:200px;" id="slider3" type ="range" min ="1" max="100" step ="1" onchange="updateSlider(this.value)"/>
+  <button onclick="change2()">Filtrar Beneficios</button>
+  <p id="demo" ng-controller='BeneficioCtrl'>Esta es tu geolocalizacion {{localizacion}} y esta es la Distancia {{distancia}}km cantidad de beneficios {{cantidadResultados}}</p>
+</div>
+
+<div class="container animated" ng-show="coupons.length>0" ng-init="loadTheBenefit()">
+           <ul class="list-group">
+             <li class="list-group-item btn-dashed" ng-repeat="m in coupons | limitTo:total | filter:search | filter:filtro|filter:'Onair'">
+                <ul class="beneficio_bg">
+					<li class="Benimg" ng-style="{'background-image':'url({{m.couponImageThumbnail}}), url(https://s3.amazonaws.com/coupit-bucket/937/1510741718514_coupon_thumbnail.jpg)'}"  ng-click="create('#/benefit/'+m._id)"></li>
+					<!--<li class="glyphicons certificate btitulo" style="cursor: pointer;" ng-click="create('#/benefit/'+m._id)"><b>{{ m.couponName | limitTo: 10}}</b></li>
+					<li class="descript" ng-click="create('#/benefit/'+m._id)" >{{ m.MarketingStatement}}</li>-->
+					<li class="ben-flex">
+						<div class="ben-name">
+							<h2>{{ m.couponName | limitTo: 20}}</h2>
+						</div>
+						<div class="ben-price">
+							<b>₪{{ m.cellPrice }}</b>
+							<span>₪{{ m.tariff }}</span>
+						</div>
+					</li>
+					<!--<li class="carlo" ng-click="create('#/benefit/'+m._id)"><b>₪{{ m.cellPrice }}</b></li>
+					<li class="precioAntes" ng-click="create('#/benefit/'+m._id)">₪{{ m.tariff }}</li>-->
+
+					<li class="btnBenefit2" ng-hide="bandera">
+						<button type="button" class="btn btn-success sombra" ng-click="showModalDamelo(m._id,m.couponName);">לחצו להטבה</button>
+					</li>
+					<li class="btnlocal" ng-show="bandera">
+						<button class="btn btn-circle btn-default btn-stroke sombra" ng-click="showModalBig2(m._id,m.couponName)">SMS</button>
+					</li>
+					<li class="btnlocal2" ng-show="bandera"><span class="glyphicon"></span></li>
+					<li class="btnlocal"ng-show="bandera"><button class="btn btn-circle btn-default btn-stroke sombra" ng-click="showModalBig(m._id,m.couponName)">Mail</button></li>
+					<li class="data">
+						<div class="biz__logo">
+						<div class="bnft-logo"><img class="img-responsive" src={{m.logo}}>
+						</div>	<span>{{m.businessName}}</span>
+						</div>
+						<div>
+							<span>{{ m.views }}</span>
+							<svg viewBox="0 0 511.6 511.6"><path d="M505.9 236.1c-26.7-43.6-62.5-78.6-107.5-105.1 -45-26.5-92.5-39.7-142.6-39.7 -50.1 0-97.6 13.2-142.6 39.7C68.2 157.5 32.4 192.5 5.7 236.1 1.9 242.8 0 249.3 0 255.8c0 6.5 1.9 13 5.7 19.7 26.6 43.6 62.5 78.6 107.5 105.1 45 26.5 92.6 39.7 142.6 39.7 50.1 0 97.6-13.2 142.6-39.5 45-26.4 80.9-61.4 107.5-105.2 3.8-6.7 5.7-13.2 5.7-19.7C511.6 249.3 509.7 242.8 505.9 236.1zM194.6 158c17-17 37.4-25.6 61.2-25.6 3.8 0 7 1.3 9.7 4 2.7 2.7 4 5.9 4 9.7 0 3.8-1.3 7-4 9.7 -2.7 2.7-5.9 4-9.7 4 -16.4 0-30.4 5.8-42 17.4 -11.6 11.6-17.4 25.6-17.4 42 0 3.8-1.3 7-4 9.7 -2.7 2.7-5.9 4-9.7 4 -3.8 0-7-1.3-9.7-4 -2.7-2.7-4-5.9-4-9.7C169 195.5 177.5 175.1 194.6 158zM379.9 349c-38.2 23.1-79.5 34.7-124.1 34.7 -44.5 0-85.9-11.6-124.1-34.7s-69.9-54.2-95.2-93.2c28.9-44.9 65.2-78.5 108.8-100.8 -11.6 19.8-17.4 41.2-17.4 64.2 0 35.2 12.5 65.3 37.5 90.4s55.2 37.5 90.4 37.5c35.2 0 65.3-12.5 90.4-37.5s37.5-55.1 37.5-90.4c0-23-5.8-44.4-17.4-64.2 43.6 22.3 79.8 55.9 108.8 100.8C449.8 294.8 418 325.9 379.9 349z"/></svg>
+						</div>
+						<div>
+							<span>{{ m.clicks }}</span>
+							<svg viewBox="0 0 256.3 256.3"><path d="M163.9 250.1c-8.4 8.3-21.9 8.3-30.2 0L16 139.8c-6.6-6.2-14.4-17.9-15-26.9 -1.5-24.3-0.4-70.9 0.3-95.7C1.6 8.2 9.2 0.7 18.2 0.5c31.6-0.7 98.5-1.5 104.7 4.7l129.5 117.2c8.3 8.3 0.8 29.4-7.6 37.7L163.9 250.1zM60.8 36.3c-7.1-7-18.5-7-25.5 0 -7 7.1-7 18.5 0 25.5 7.1 7 18.5 7 25.5 0C67.8 54.7 67.8 43.3 60.8 36.3z"/></svg>
+						</div>
+					</li>
+					<!--<li class="imgEm" ng-style="{'background-image':'url({{m.logoThumbnail}})'}"></li>-->
+				</ul>
+                      </li>
+           </ul>
+</div>
+
+<!--<div class="container more-bnfts-btn" ng-show="coupons.length>0">
+  <div class="row">
+     <div class="list-group row">
+       <button class="btn btn-success2 sombra" style="margin-top: 60px;" ng-click="total =total + 600" ng-init="total=600" dir="rtl">להטבות נוספות <i class="glyphicon glyphicon-plus"></i> </button>
+    </div>
+
+  </div>
+</div>
+
+<footer class="container">
+  <dir class="row">
+      <div class="list-group">
+          <div class="textoMidle">
+          </div>
+      </div>
+  </dir>
+</footer>-->
+<!--
+<div ng-controller="HomeCtrl" ng-show="!sacos">
+<div id="newslater">
+ <a class="fa fa-close" style="float:left;font-size:20px;margin:10px;text-decoration:none;" ng-click="saco();"></a>
+   <form name="form.userForm" class="form-horizontal newslater" name"contact" ng-submit="sendNewslater(mail)" style="padding: 5px;margin-top: -10px;">
+
+          <div class="form-group has-feedback no-margin">
+          <h3 dir="rtl" style="color: #1EB356;float: right;font-size: 17px; margin-right: 10px;">לקבלת הודעות אי-מייל עם כל ההטבות</h3>
+
+          <button class="btn btn-success gf sombra pedo form-control-feedback rounded" style="background-color: #1A9247;width: 100px; height: 40px;top: 50px;left: 5px;" ng-click="sendNewslater(email)" ng-disabled="form.userForm.$invalid" ><i class="glyphicon glyphicon-send" style="font: 50px"></i> הרשמה</button>
+
+          <input dir="rtl" type="email" name="email" ng-model="email" class="form-control" placeholder="דואר אלקטרוני" style="width: 100%;">
+
+            </div>
+
+      </form>
+</div>
+</div>
+-->
+<!--<div ng-controller="CollapseDemoCtrl" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation"></div>-->
+<!-- <button type="button" class="btn btn-success gf sombra" dir="rtl" ng-click="showModalContacto2()" >בעל עסק?</button>
+ <button ng-bind-html-unsafe="html" ng-controller="PopoverDemoCtrl" uib-popover-html="htmlPopover" dir="rtl" class="btn btn-success gf sombra pedo">בעל עסק?</button>-->
+
+<!--
+<div id="option" ng-show="mango" >
+
+<button ng-show="mango" type="button" class="chincho2 " style="visibility: visible;  padding-top: 10px;border: 0.5px solid #888C89;" ng-click="cambioMongo();showModalContacto4();"><img class="imgWidget" src="img2/a3.jpg"><h4 class="wigetButton" dir="rtl">צור הטבה חדשה</h4></button>
+
+<button ng-show="mango" type="button" class="chincho2" style="visibility: visible;border: 0.5px solid #888C89;" ng-click="cambioMongo();showModalContacto3();"><img class="imgWidget" src="img2/as1.jpg"><h4 class="wigetButton" dir="rtl">צור מוצר חדש</h4></button>
+<button ng-show="mango" type="button" class="chincho2 " style="visibility: visible; border: 0.5px solid #888C89;" ng-click="showModalContacto();cambioMongo();"><img class="imgWidget" src="img2/a2.jpg"><h4 class="wigetButton" dir="rtl">רוצה שנחזור אליך?</h4></button>
+<div class="flecha-down-before"></div><div class="flecha-down"></div>
+  </div>
+
+ <button dir="rtl" class="btn btn-success gf sombra pedo" style="margin-left: 5px;width: 140px;font-size: 1.3em;" ng-click="cambioMongo()" >פרסם עכשיו בחינם!</button>
+<div class="fotterd" style="width:50%;"><h6 dir="rtl">כל הזכויות שמורות | Coupit.co.il © 2016 | <a href="/#/terms/">תנאי שימוש - תקנון</a></h6></div>
+</div>-->
+<div ng-controller="HomeCtrl" >
+<!--
+<div ng-click="saco();" id="iconNew" class="circle show animated pulse" style="display:none;" >
+     <i class="glyphicon glyphicon-send" style="font: 50px"></i>
+
+  </div>
+-->
+
+
+<script>
+	//var x = document.getElementById("demo");
+	//
+	//
+	//
+
+	function updateSlider(slideAmount) {
+		var sliderDiv = document.getElementById("sliderAmount");
+		sliderDiv.innerHTML = slideAmount + 'km';
+	}
+
+	var loc;
+
+	var distancia = document.getElementById("slider3").value;
+
+	setTimeout(function() {
+		change();
+	}, 3000);
+
+	function change() {
+
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition, showError);
+		}
+	}
+
+	function cambiar() {
+		document.getElementById('matrix').src = "img/btnlo.png";
+	}
+
+	function volver() {
+		document.getElementById('matrix').src = "img/btnlo.png";
+	}
+
+	var apretado = false;
+	function change2() {
+		/*
+		 distancia = document.getElementById("slider3").value;
+
+		 loc =[32.08615960195098,34.7781096436694];
+
+		 var scope = angular.element($("#demo")).scope();
+		 scope.$apply(function(){
+
+		 scope.actualizoLoc(loc , distancia);
+
+		 })
+
+		 */
+		if (!apretado) {
+			apretado = true;
+
+			document.getElementById("preloader").style.display = "block";
+			setTimeout(function() {
+				document.getElementById("preloader").style.display = "none";
+			}, 5000);
+			document.getElementById("status2").style.display = "block";
+			document.getElementById("status3").style.display = "none";
+
+			volver();
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition, showError);
+				var scope = angular.element($("#demo")).scope();
+				scope.$apply(function() {
+
+					scope.actualizoLoc(loc, 50);
+
+				})
+			} else {
+				x.innerHTML = "Geolocation no esta habilitada en tu dispositivo o pc!! ";
+			}
+		} else {
+			apretado = false;
+
+			document.getElementById("preloader").style.display = "block";
+			setTimeout(function() {
+				document.getElementById("preloader").style.display = "none";
+			}, 5000);
+			document.getElementById("status2").style.display = "none";
+			document.getElementById("status3").style.display = "block";
+
+			cambiar();
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition, showError);
+				var scope = angular.element($("#demo")).scope();
+				scope.$apply(function() {
+
+					scope.actualizoLoc(loc, 200);
+
+				})
+			} else {
+				x.innerHTML = "Geolocation no esta habilitada en tu dispositivo o pc!! ";
+			}
+		}
+
+	}
+
+	function showPosition(position) {
+
+		loc = [position.coords.longitude, position.coords.latitude];
+		//x.innerHTML = "Cord : "+ loc[0] +"+"+loc[1];
+
+	}
+
+	function showError(error) {
+		switch(error.code) {
+		case error.PERMISSION_DENIED:
+			// x.innerHTML = "User denied the request for Geolocation."
+			break;
+		case error.POSITION_UNAVAILABLE:
+			// x.innerHTML = "Location information is unavailable."
+			break;
+		case error.TIMEOUT:
+			//  x.innerHTML = "The request to get user location timed out."
+			break;
+		case error.UNKNOWN_ERROR:
+			// x.innerHTML = "An unknown error occurred."
+			break;
+		}
+	}
+</script>

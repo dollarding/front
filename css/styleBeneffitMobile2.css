@@ -1,0 +1,225 @@
+.newsleter{
+width: 180px;
+float: right;
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+}
+.form-control{
+
+text-align: right;
+height: 50px;
+
+}
+
+.navbar{
+	
+	background-color: #222;
+	border-color:  #49BB6F;
+	 border-bottom: 1px solid #49BB6F;
+	 border-top: 1px solid #49BB6F;
+}
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.navbar-toolbar .navbar-right .dropdown-menu .dropdown-header {
+    display: table;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 1px solid #222;
+    padding: 0 15px !important;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+     border-color: #222;
+}
+
+
+.form-horizontal{
+width: 95%;
+float: left;
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+
+}
+
+.beneficio_bg{
+width: 135px;
+float: left;
+padding: 0px;
+}
+
+.beneficio_bg li {
+    
+    list-style-type: circle;
+    display: inline;
+    float: left;
+ }
+
+.btitulo{
+font-family: 'Open Sans Hebrew',arial;
+color: #424242;
+float:left;
+width: 135px;
+text-align: center;
+ margin-top: 5px;
+}
+
+.btnLove{
+width: 20px;
+height:20px; 
+margin: 5px;
+}
+
+
+.precioAntes{
+font-family: 'Open Sans Hebrew',arial;
+margin-left: 10px;
+width: 50px;
+float:left;
+margin-top: 40px;
+
+}
+.descript{
+font-family: 'Open Sans Hebrew',arial;
+color: #BDBDBD;
+width: 135px;
+float:right;
+text-align: center;
+margin-top: 5px;
+
+}
+
+
+.icons{
+float: right;
+width: 20px;
+padding-right: 15px
+}
+.bsale{
+font-family: 'Open Sans Hebrew',arial;
+font-size: 3em;
+color: #BDBDBD;
+width: 65px;
+float:right;
+text-align: right;
+padding-right: 5px;
+}
+.btnBenefit{
+width: 120px;
+float:left;
+text-align: center;
+margin-top: 5px;
+
+}
+.btnfacebook{
+width: 30px;
+float:left;
+margin: 6px;
+
+
+}
+
+.btnlocal{
+width: 30px;
+float:left;
+margin-top: 5px;
+	
+}
+
+.Em{	
+color: #BDBDBD;
+text-align: right;
+width: 90px;
+float:right;
+margin-top: 5px;
+	
+}
+.imgEm{
+text-align: right;
+width: 20px;
+float:right;
+padding-right: 25px;
+margin-top: 5px;
+}
+
+.spaces{
+
+width: 150px;
+height: 10px;
+}
+
+.btn-success{
+	font-family: 'Open Sans Hebrew',arial;
+	font-size: 1em;
+	width: 120px;
+	height: 35px;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
+.btn-success.btn-stroke:hover {
+    background-color: #1A9247;
+    border-color: transparent;
+    color: white;
+}
+.btn-success.btn-dotted {
+    border: 1px dotted #1A9247;
+}
+.btn-success {
+    background-color: #1A9247;
+    border-color: #8CC152;
+    color:white;
+}
+.precioBene{
+	font-family: 'Open Sans Hebrew',arial;
+	font-size: 1.2em;
+	text-align: center;
+	width: 67px;
+	height: 53px;
+	background-image: url("../img/precio.png");
+    border-color: #8CC152;
+    color: white;
+	position:absolute;
+	margin-top: 105px;
+	margin-left: 115px;
+
+}
+.carlo{
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.nando{
+float: left;
+margin-top: 20px;
+width: 50px;
+height: 50px;
+/*border-top-left-radius: 10px 10px;
+border-top-right-radius: 10px 10px;
+border-bottom-left-radius: 10px 10px;
+border-bottom-right-radius: 10px 10px;*/
+}
+.btnf{
+	margin-left: 0px;
+	padding-left: 0px;
+	float: left;
+width: 100%;
+}
+.gf{
+
+margin-left: 20px;
+}
+
+.glyphicon {
+	text-align: center;
+    font-size: 25px;
+}

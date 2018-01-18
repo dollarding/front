@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="he" ng-app="Coupit">
+<head>
+ <meta charset="utf-8">
+  <title>דף הבית | קופיט</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0;">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/manifest.json">
+    <link rel="mask-icon" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="http://coupit.co.il/wp-content/themes/costa/img/favicons/favicon.ico">
+
+
+ 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+
+
+
+   <!-- START @PAGE LEVEL STYLES -->
+        <link href="../assets/global/plugins/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../assets/global/plugins/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="../assets/global/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet">
+        <link href="../assets/global/plugins/bower_components/jasny-bootstrap-fileinput/css/jasny-bootstrap-fileinput.min.css" rel="stylesheet">
+        <link href="../assets/global/plugins/bower_components/chosen_v1.2.0/chosen.min.css" rel="stylesheet">
+        <!--/ END PAGE LEVEL STYLES -->
+
+        <!-- START @THEME STYLES -->
+        <link href="../assets/admin/css/reset.css" rel="stylesheet">
+        <link href="../assets/admin/css/layout.css" rel="stylesheet">
+        <link href="../assets/admin/css/components.css" rel="stylesheet">
+        <link href="../assets/admin/css/plugins.css" rel="stylesheet">
+        <link href="../assets/admin/css/themes/default.theme.css" rel="stylesheet" id="theme">
+        <link href="../assets/admin/css/custom.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/styleMobile.css" >
+        <link rel="stylesheet" href="../css/styleBeneffitMobile.css" >
+        <!--/ END THEME STYLES -->
+  
+</head>
+
+<nav>
+
+ <div class="navbar navbar-inverse navbar-fixed-top" id="backtoTop">
+  <div class="container ">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <li class="logo2"><a href="#"></a></li>
+
+    </div>
+    <div class="collapse navbar-collapse">
+
+      <ul class="nav navbar-nav navbar-lefth">
+        <li class="android"><a href="#"><img src="../img/android.png" alt="Android"></a></li>
+        <li class="android"><a href="#"><img src="../img/apple.png" alt="Apple"></a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">צור קשר</a></li>
+        <li><a class="dropdown navbar-profile dropdown-toggle" type="button" id="עסקים" data-toggle="dropdown">עסקים<span class="caret"></span></a>
+           <ul class="dropdown-menu" role="menu" aria-labelledby="עסקים">
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">השרותים</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">איך זה עובד</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">כמה זה עולה</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">הקרוסלה של קופיט</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">FaceCoup</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">תקציב דיגיטלי</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">הטבות בעיתון</a></li>
+           <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">רשת השותפים</a></li>
+         </ul>
+        </li>
+        <li><a href="#">המלצות</a></li>
+        <li><a class="dropdown-toggle" type="button" id="אודותינו" data-toggle="dropdown">אודותינו<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="אודותינו">
+          <li class="menuT" role="presentation"><a role="menuitem" tabindex="-1" href="#">המלצות</a></li>
+         </ul>
+        </li>
+        <li class="active"><a href="#">אפליקציה</a></li>
+        <li class="logo"><a href="#"></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+</nav>
+
+<body>
+<div class="wide">
+    <div class="col-xs-1 textoMidle">
+    <h1>הטבות שבוודאי תאהבו</h1>
+    <h5>בואו להכיר עולם חדש של הטבות. מהיום הכל נהיה פשוט יותר. הורידו את האפליקציה והצטרפו לשירות.</h5>
+</div>
+
+<div class="app_video">
+          <a class="pop-video btn " href="https://vimeo.com/139472058">
+          <svg xml:space="preserve" viewBox="0 0 87.9 87.9" y="0" x="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <path d="M43.9 0C19.7 0 0 19.7 0 43.9c0 24.2 19.7 43.9 43.9 43.9 24.2 0 43.9-19.7 43.9-43.9C87.9 19.7 68.2 0 43.9 0zM43.9 79.9c-19.8 0-35.9-16.1-35.9-35.9 0-19.8 16.1-35.9 35.9-35.9 19.8 0 35.9 16.1 35.9 35.9C79.9 63.8 63.7 79.9 43.9 79.9zM37.9 55.9L55.9 43.9 37.9 31.9V55.9z">
+            </path></svg>
+          </a>
+ </div>
+
+ <div class="app_biz">
+    <a class="btn btn-theme " href="#"><strong>בעל עסק?</strong></a>
+</div> 
+</div>
+
+
+<div class="container">
+  <div class="row">
+     <div class="col-md-2">
+       <div ng-controller="BeneficioCtrl">
+           <ul class="list-group">
+
+             <li class="list-group-item list-group-item2" ng-repeat="m in model">
+                        <div class="precioBene">
+                        
+                          <div class="carlo"><b>₪{{ m.precio }}</b></div>
+                         
+                        </div>
+                        <ul class="beneficio_bg">
+                         <li class="btnLove"><button class="btn btn-circle btn-lilac btn-stroke"><i class="fa fa-heart"></i></button></li>
+                          <li class="glyphicons certificate btitulo"><b>{{ m.titulo }}</b></li>
+                           <li class="Rating"><ul class="rating rating-success">
+                                                    <li class="star"></li>
+                                                    <li class="star active"></li>
+                                                    <li class="star"></li>
+                                                    <li class="star"></li>
+                                                    <li class="star"></li>
+                                                </ul></li>
+
+                          <li class="Benimg"><img width="178px" src="{{m.Benimg}}" alt=""></li>
+                          <li class="precioAntes"><strike>₪{{ m.precioAntes }}</strike></li>
+                          <li class="descript">{{ m.descript }}</li>
+                          <li class="bvistas">{{ m.vistas }}</li>
+                          <li class="icons"><span class="glyphicon glyphicon-eye-open"></span></li>
+                          <li class="bsale">{{ m.sale }}</li>
+                          <li class="icons"><span class="glyphicon glyphicon-tags"></span></li>
+                          <li class="btnBenefit"><button type="button" class="btn btn-success btn-stroke btn-dotted">מידע נוסף</button></li>
+                          <li class="btnfacebook"><button class="btn btn-circle btn-facebook btn-stroke" ng-click="create(m.facebook)"><i class="fa fa-facebook"></i></button></li>
+                          <li class="btnlocal"><button class="btn btn-circle btn-danger btn-stroke" ng-click="create(m.facebook)"><i class="glyphicon glyphicon-map-marker"></i></button></li>
+                          <li class="btnlocal"><button class="btn btn-circle btn-lilac btn-stroke"><i class="glyphicon glyphicon-phone"></i></button></li>
+                          <li class="btnlocal"><button class="btn btn-circle btn-twitter btn-stroke"><i class="glyphicon glyphicon-envelope"></i> </button></li>
+                           <li class="spaces"></li>
+                          <li class="Em">{{ m.empresa }}</li>
+                          <li class="imgEm"><img src="{{m.imgEm}}" alt=""></li>
+
+                        </ul>
+                      </li>
+           </ul>
+     </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+     <div class="col-md-16">
+     <center>
+       
+       <button type="button" class="btn btn-success">הרווח יותר</button>
+     </center>
+     
+
+    </div>
+     
+  </div>
+</div>
+
+
+
+
+
+<div id="back-top" class="circle show animated pulse" style="display: none;">
+      <i class="fa fa-angle-up"></i>
+  </div>
+
+     <!-- START @CORE PLUGINS -->
+        <script src="../assets/global/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/jquery-cookie/jquery.cookie.js"></script>
+        <script src="../assets/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/typehead.js/dist/handlebars.js"></script>
+        <script src="../assets/global/plugins/bower_components/typehead.js/dist/typeahead.bundle.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/jquery.sparkline.min/index.js"></script>
+        <script src="../assets/global/plugins/bower_components/jquery-easing-original/jquery.easing.1.3.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/ionsound/js/ion.sound.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/bootbox/bootbox.js"></script>
+        <!--/ END CORE PLUGINS -->
+
+        <!-- START @PAGE LEVEL PLUGINS -->
+        <script src="../assets/global/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/jasny-bootstrap-fileinput/js/jasny-bootstrap.fileinput.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/holderjs/holder.js"></script>
+        <script src="../assets/global/plugins/bower_components/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/jquery-autosize/jquery.autosize.min.js"></script>
+        <script src="../assets/global/plugins/bower_components/chosen_v1.2.0/chosen.jquery.min.js"></script>
+        <!--/ END PAGE LEVEL PLUGINS -->
+
+        <!-- START @PAGE LEVEL SCRIPTS -->
+        <script src="../assets/admin/js/apps.js"></script>
+        <script src="../assets/admin/js/pages/blankon.form.element.js"></script>
+        <script src="../assets/admin/js/demo.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <!--/ END PAGE LEVEL SCRIPTS -->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="../js/controller.js"></script>
+
+
+</body>

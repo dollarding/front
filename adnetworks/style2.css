@@ -1,0 +1,228 @@
+body{
+margin: 0px;
+
+}
+button{
+	border: none;
+	background: none;
+	background-color: none;
+
+}
+
+button:hover{
+	border: none;
+	background: none;
+	background-color: none;
+	
+}
+
+button:active{
+	border: none;
+	background: none;
+	background-color: none;
+	
+}
+button:target{
+	border: none;
+	background: none;
+	background-color: none;
+	 
+}
+
+input { 
+	font-size: 20pt;
+    text-align: right; 
+}
+
+textarea{
+text-align: right; 
+
+}
+
+h3{
+text-align: right; 
+
+}
+
+p { 
+
+  font-family: "Palatino", sans-serif; 
+  font-size: xx-small; 
+}
+
+
+@keyframes example {
+
+	 0%  {bottom:-0px; top:+2000px;visibility:visible; opacity: 0;}
+	 50%  {bottom:-0px; top:+130px;visibility:visible; opacity: 0;}
+    100%  {bottom:0px; top:0px;visibility:visible; opacity: 1;}
+}
+
+
+
+
+.campoTexto{
+float: left;
+width:100%;
+background-color:#206b3d;
+height:100px;
+}
+.form-control{
+	margin-top: 15px;
+	width: 300px;
+	font-size: 15pt;
+
+}
+.form-control2{
+	margin-top: 15px;
+	width: 100%;
+	font-size: 18pt;
+
+}
+
+.hederss{
+	background-image: url("http://coupit.co.il/adnetworks/img/topBg.png");
+	width: 100%;
+	float: left;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+	}
+
+.sectionTabs{
+	float: left;
+	background-color:#206b3d;
+	width:100%;
+	height:500px;
+
+	}
+
+.sectionBtn{
+	z-index: 2;
+	float: left;
+	background-color:#ffffff;
+	width:100%;
+	height:300px;
+	
+	}
+
+.fotter{
+	z-index: 2;
+	float: left;
+	background-color:#444444;
+	width:100%;
+	height:100px;
+	}
+
+.selector{
+	float:left;
+	width:100%;
+	height: 20px;
+	}
+
+.cel{
+z-index: 1;
+background-image: url(http://coupit.co.il/adnetworks/img/celu.png);
+width:205px;
+height:408px;
+display: block;
+position: relative;
+animation-name: example;
+animation-duration: 1s;
+}
+
+.pc{
+z-index: 1;
+background-image: url(http://coupit.co.il/adnetworks/img/pc.png);
+width:657px;
+height:408px;
+display: none;
+position: relative;
+animation-name: example;
+animation-duration: 1s;
+}
+
+.tablet{
+z-index: 1;
+background-image: url(http://coupit.co.il/adnetworks/img/tablet.png);
+width:561px;
+height:408px;
+display: none;
+position: relative;
+animation-name: example;
+animation-duration: 1s;
+}
+
+
+.contenedor{
+width:300px;
+
+}
+
+.contenedorFotter{
+width:400px;
+float:right;
+
+}
+
+.btn_dispositivos{
+float: left;
+width: 100px;height: 100px;
+}
+
+.btn_contratar{
+padding-top: 40px;
+float: left;
+}
+
+.flechas{
+	margin-top: 0;
+	float: left;
+	background-color:#ffffff;
+	width:100%;
+	height:50px;
+
+}
+
+
+.flecha1{
+	padding-top: 10px;
+margin-left: 0px;	
+float:left;
+position:relative;
+width: 100px;height: 100px;
+
+}
+
+
+.flecha2{
+	padding-top: 10px;
+	margin-left: 100px;
+float:left;
+position:relative;
+width: 100px;height: 100px;
+
+}
+
+.flecha3{
+	padding-top: 10px;
+margin-left: 200px;
+float:left;
+position:relative;
+width: 100px;height: 100px;
+
+}
+.btn-success{
+width: 100%;
+text-align: center;
+
+
+}
+.modal-header{
+background-color:#464646;
+color: white;
+}
+.close{
+	margin-top: 0px;
+	float: left;
+}

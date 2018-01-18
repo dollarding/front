@@ -1,0 +1,210 @@
+.newsleter{
+width: 180px;
+float: right;
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+}
+.form-control{
+
+	text-align: right;
+}
+
+.navbar{
+
+	background-color: #222;
+	border-color:  #49BB6F;
+	 border-bottom: 1px solid #49BB6F;
+	 border-top: 1px solid #49BB6F;
+}
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.navbar-toolbar .navbar-right .dropdown-menu .dropdown-header {
+    display: table;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 1px solid #222;
+    padding: 0 15px !important;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+     border-color: #222;
+}
+
+
+.form-horizontal{
+width: 180px;
+float: right;
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.beneficio_bg{
+width: 180px;
+float: left;
+padding: 0px;
+}
+
+.beneficio_bg li {
+    font-size: 14px;
+    list-style-type: circle;
+    display: inline;
+    float: left;
+ }
+
+.btitulo{
+font-family: 'Open Sans Hebrew',arial;
+color: #424242;
+float:left;
+width: 150px;
+text-align: right;
+padding-right: 13px;
+}
+
+.btnLove{
+width: 20px;
+height:20px; 
+margin: 5px;
+}
+
+.Benimg{
+
+}
+.Rating{
+width: 220px;
+float: right;
+padding-right: 25px;
+}
+
+.rating{
+float: right;
+}
+.precioAntes{
+font-family: 'Open Sans Hebrew',arial;
+margin-left: 10px;
+width: 180px;
+float:left;
+
+}
+.descript{
+font-family: 'Open Sans Hebrew',arial;
+color: #BDBDBD;
+width: 180px;
+float:right;
+text-align: right;
+padding-right: 15px;
+
+}
+
+.bvistas{
+font-family: 'Open Sans Hebrew',arial;
+color: #BDBDBD;
+width: 130px;
+float:right;
+text-align: right;
+padding-right: 5px;
+
+}
+
+.icons{
+float: right;
+width: 20px;
+padding-right: 15px
+}
+.bsale{
+	font-family: 'Open Sans Hebrew',arial;
+color: #BDBDBD;
+width: 130px;
+float:right;
+text-align: right;
+padding-right: 5px;
+}
+.btnBenefit{
+width: 180px;
+float:left;
+text-align: center;
+
+}
+.btnfacebook{
+width: 30px;
+float:left;
+margin: 6px;
+
+
+}
+
+.btnlocal{
+width: 30px;
+float:left;
+margin:6px;
+	
+}
+
+.Em{	
+color: #BDBDBD;
+text-align: right;
+width: 125px;
+float:right;
+margin: 5px;
+	
+}
+.imgEm{
+text-align: right;
+width: 30px;
+float:right;
+padding-right: 25px;
+}
+
+.spaces{
+
+width: 180px;
+
+}
+
+.btn-success{
+	font-family: 'Open Sans Hebrew',arial;
+	font-size: 1.5em;
+	width: 150px;
+	height: 50px;
+}
+
+.btn-success.btn-stroke:hover {
+    background-color: #1A9247;
+    border-color: transparent;
+    color: white;
+}
+.btn-success.btn-dotted {
+    border: 1px dotted #1A9247;
+}
+.btn-success {
+    background-color: #1A9247;
+    border-color: #8CC152;
+    color: white;
+}
+.precioBene{
+	font-family: 'Open Sans Hebrew',arial;
+	font-size: 1.2em;
+	text-align: center;
+	width: 67px;
+	height: 53px;
+	background-image: url("../img/precio.png");
+    border-color: #8CC152;
+    color: white;
+	position:absolute;
+	margin-top: 105px;
+	margin-left: 115px;
+
+}
+.carlo {
+	margin-top: 10px;
+	
+}

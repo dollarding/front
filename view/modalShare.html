@@ -1,0 +1,28 @@
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v2.6&appId=190322544333196";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="modal-header">
+    <a class="fa fa-close" ng-click="cancel()"></a>
+    <h3>שתף</h3>
+</div>
+
+<dir class="modal-body" style="height:80px;padding: 0px;">
+<center>
+
+<button class="maricon" ng-click="createM('https://www.facebook.com/sharer.php?u=http://coupitsite.byethost5.com/sharedBenefit.php?id='+items)"><img src="http://coupit.co.il/img/fc.png" width="64px" height="64px"></button>
+
+<!--<button class="maricon" ng-click="createM('https://plus.google.com/share?url={http://coupitsite.byethost5.com/sharedBenefit.php?id='+items)"><img src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></button>
+-->
+<button class="maricon" ng-click="createM('whatsapp://send?text=http://coupitsite.byethost5.com/sharedBenefit.php?id='+items)"><img src="/img/washap.png" width="64px" height="64px"></button>
+
+</center>
+</dir>
